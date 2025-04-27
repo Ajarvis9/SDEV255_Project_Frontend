@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses App</title>
+    <script src="scripts/add_course.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">All Courses</a>
+        <a href="/add_course.html">Add a Course</a>
+    </nav>
+    <h1>Add a Course</h1>
+    <form>
+        <div>
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName">
+        </div>
+        <div>
+            <label for="subject">Subject Area:</label>
+            <input type="text" id="subject">
+        </div>
+        <div>
+            <label for="credits">Number of Credits:</label>
+            <input type="number" min="1" max="10" id="credits">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input type="text" id="description">
+        </div>
+        <div>
+            <input type="button" id="addbtn" value="Add Course">
+        </div>
+        <div id="error"></div>
+    </form>
+
+
+</body>
+</html>
